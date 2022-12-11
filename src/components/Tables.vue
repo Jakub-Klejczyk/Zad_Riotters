@@ -133,6 +133,19 @@ export default {
 @media (max-width: 1000px) {
   .tables {
     height: auto;
+    padding-bottom: 32px;
+    width: auto;
+  }
+}
+@media (max-width: 660px) {
+  .nav-list {
+    flex-wrap: wrap;
+    width: 320px;
+    margin-right: 0px;
+  }
+  .tables {
+    width: 300px;
+    padding-bottom: 32px;
   }
 }
 </style>

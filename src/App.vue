@@ -259,8 +259,27 @@ span {
     grid-row-start: 3;
     margin-block: 32px;
   }
-  .tables {
-    width: 509px;
+}
+
+@media (max-width: 660px) {
+  main {
+    width: 332px;
+  }
+  .summary {
+    max-width: 300px;
+    height: auto;
+  }
+  .wrapper {
+    padding: 49px 12px 0px 12px;
+  }
+  input {
+    width: 116px;
+  }
+  #summary {
+    height: 220px;
+  }
+  .big-img {
+    width: 300px;
   }
 }
 </style>

@@ -9,11 +9,15 @@ export default {
     data: Array,
   },
   setup() {
-    const imgs = ref([BTC, ETH, USDT]);
+    const imgs = [BTC, ETH, USDT];
     const getImg = (name) => {
-      const img = `src/assets/${name}.svg`;
-      return img;
+      for (let i = 0; i < imgs.length; i++) {
+        if (imgs[i].indexOf(name) != -1) {
+          return imgs[i];
+        }
+      }
     };
+
     return { getImg, imgs };
   },
 };
@@ -136,22 +140,22 @@ export default {
   border-radius: 4px;
 }
 
-#first-btn-small {
+#second-btn-small {
   background-color: #7445fb;
   color: white;
 }
 
-#first-btn-small:hover {
+#second-btn-small:hover {
   background-color: #5125d5;
   transition-duration: 0.4s;
 }
 
-#second-btn-small {
+#first-btn-small {
   background-color: white;
   color: #7445fb;
 }
 
-#second-btn-small:hover {
+#first-btn-small:hover {
   background-color: #ddd8ee;
   transition-duration: 0.4s;
 }
@@ -173,6 +177,17 @@ export default {
   }
   .btns {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 660px) {
+  .summary-elem {
+    height: auto;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .btns {
+    flex-direction: row;
   }
 }
 </style>
