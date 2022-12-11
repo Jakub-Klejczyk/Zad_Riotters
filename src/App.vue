@@ -31,9 +31,9 @@ export default {
           </div>
           <div class="dot"></div>
           <div class="icon" id="hamburger">
-            <img src="./assets/Vector 185.svg" alt="" />
-            <img src="./assets/Vector 185.svg" alt="" />
-            <img src="./assets/Vector 185.svg" alt="" />
+            <img src="./assets/hamburger.svg" alt="" />
+            <img src="./assets/hamburger.svg" alt="" />
+            <img src="./assets/hamburger.svg" alt="" />
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@ export default {
 
             <img src="./assets/dots.svg" class="dots" alt="" />
           </div>
-          <img src="./assets/Group 2087.svg" class="big-img" alt="" />
+          <img src="./assets/chart-img.svg" class="big-img" alt="" />
         </div>
         <Tables :data="data" />
       </div>
