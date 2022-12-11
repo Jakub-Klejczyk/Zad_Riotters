@@ -75,7 +75,6 @@ export default {
           plugins: {
             legend: {
               position: "bottom",
-
               labels: {
                 useBorderRadius: true,
                 boxWidth: 12,
