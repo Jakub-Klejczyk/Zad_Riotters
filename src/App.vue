@@ -1,9 +1,10 @@
 <script>
 import getData from "./composables/getData";
 import Tables from "./components/Tables.vue";
+import Chart from "./components/Chart.vue";
 
 export default {
-  components: { Tables },
+  components: { Tables, Chart },
   setup() {
     const { load, data } = getData();
     load();
@@ -57,11 +58,11 @@ export default {
         </div>
         <div class="summary" id="summary">
           <div class="title">
-            <h2>Summary</h2>
+            <h2 id="title">Summary</h2>
 
             <img src="./assets/dots.svg" class="dots" alt="" />
           </div>
-          <img src="./assets/chart-img.svg" class="big-img" alt="" />
+          <Chart />
         </div>
         <Tables :data="data" />
       </div>
@@ -231,6 +232,10 @@ span {
   transform: translate(-32px, -24px);
 }
 
+#title {
+  padding-bottom: 24px;
+}
+
 @keyframes bounce {
   0%,
   20%,
@@ -266,7 +271,7 @@ span {
     width: 332px;
   }
   .summary {
-    max-width: 300px;
+    max-width: 308px;
     height: auto;
   }
   .wrapper {

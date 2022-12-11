@@ -144,7 +144,7 @@ export default {
     margin-right: 0px;
   }
   .tables {
-    width: 300px;
+    max-width: 308px;
     padding-bottom: 32px;
   }
 }
